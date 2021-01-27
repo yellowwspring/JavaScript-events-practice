@@ -1,0 +1,6 @@
+methods:
+
+.onclick
+.ondbclick
+.onmouseenter
+.onmousemove

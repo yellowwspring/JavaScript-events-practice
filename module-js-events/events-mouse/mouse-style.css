@@ -1,0 +1,8 @@
+html{
+    box-sizing: border-box;
+}
+div#square{
+    width: 100px;
+    height:100px;
+    background: greenyellow;
+}
