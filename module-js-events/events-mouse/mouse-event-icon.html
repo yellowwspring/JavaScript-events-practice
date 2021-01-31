@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кролик</title>
+
+</head>
+<body>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEnklEQVR4nO3aa4hVVRTA8Z85zjjOYFZmllpklFIaWlRWFD1IKiiEHkTRQwrJEimo7CEVBYZYJkFpESEiKT00U3qA2csP1Yc0LCrpRWmpvSxLy2ymD+sM2XXu1Xvm3HPv2P3DZubetc+6a+1z9j5rrb2pU6dOnTp1apWemFRtI6pFAxZiOxqrbEvuNOBZtCftqOqaky+98Lxw/Knk7/lVtShHemGxcHoSjvc/GoBGLEEbJibfXSQGYFi1jMqLJiwVzk/Y6ftZ2JrI91qa8JJw/rqdvm/BD5hbBZtyozdewd8YXyC7Wzz+J+VtVF4041Xh/NUFsnOwA0/kbVReNGO5cP7KAtnJ+BXv20vnfh+sEHf48gJZh/Of4OCc7cqFVrwhnL+sQDYGv9hLnW/FFGzCX7ikQN7h/McYuIc6e6AvDhWhc03SF1PF66wdL+PEgj7HCOd/FwHQeNyEe0UcMFdEh69jFb7Ez2L9aMe7YjBqin64Bz8JI5fihCJ9J/o36SlsW/AN1uBtLMN8zE5kWzGyUk6kYX/cj80isFmM43ZzTQPOxpkYjaGJnp5F+jfjGTFAhbFD1eiPB8QK3iZS2WMz/o0GjMPnokYwOWP9qRiAGfhNzMkFYk6Xw2G4BbcXadMTvZvEXf9ILJpV53AxB9vxGUYU6dcoHtXCd34HcxVfAzrWgQ/wtJgqNcMI/zV0uc5X4/0S+Y9F9CzEpyIvKGw1HQl2DMBE3Jn8f2on/fbFRuFkZywUwU+3o2MALhbT4QXpMrduPwDXdFFPtx2AVrH4fS3meVq67QAQRcs/RWCSlnn4IhtzqsPNYipclfL6W0UMUVMhbbmsFElKsfC1FP2wTiQ4j4tE6MjsTMuHC8RTcGnK64eIaG99omeHyAa7DT1ELv9OBroGioUxizdMrtwgjB6ega4mrMZXajDXL8Yw2aaoVyT6zshIXy58LxayLOgjEqEnM9KXC0tE5pYV80RxpXeGOivKI+KuZcVYXXu75M5MYfCenujoLQooo4rIe+JbvNh10/JhuhiAXrvpN0Bse21J+q8u0fchUQLrn4WBlWaaCGJKMRIbhFNzxB5BqTR6lBikG7MwsNLMEbW7YjSJDHIDTitD7xoRZB0oii41u3O0CB+WkN8l7ma5Rc0pdq0Vvqf8AmzFWSk2PjujRVSPF6TQO1g8NbfhLDEd1osdpSEp9FWMtSKO74xzxZ27MKXuloLPg0UGmWZAK8ZmEQt0xmQxAEMz/L3Z+C5DfV2iUTg4tYj8jkTenOFvThN7E/tkqDM1g4SDE4rIr5X+1Odwu+4RNIj4YWUKfRVhtHBwXBH5yER+fZl6m8WewgpxFoDYPJ2f6DuvbEszZpA40bVMGHRKJ30axdRow5tl6n84uW5bon9j8nm7qCdWlSPEGYA2UddbJzZJCnlOGL9KFE72lNMT3bNwiIgH5ojN1KNTW50hM/GH0sYcJJyfUabuFrEVvla2C2emPCYezdYSfQ4Qd/G+MnU/KsrlnU2pmmGMcG69eMyLtW1Jv7fEHmKptkicLGnDg/m5kp6x4qzvGpEHZNVe040qQXXq1KlTpzvyDzHiN4wIqdD/AAAAAElFTkSuQmCC"
+alt="" id="rabbit">
+<script>
+    let rabbit = document.getElementById('rabbit');
+    document.onmousemove = function (event) { // document.onmousemove - значит событие будет распространяться по всему окну, а не только в пределах элемента
+        rabbit.style.position = 'fixed';
+        rabbit.style.left = event.clientX + 'px';
+        rabbit.style.top = event.clientY + 'px';
+    }
+</script>
+</body>
+</html>
