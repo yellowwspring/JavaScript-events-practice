@@ -10,7 +10,7 @@ html, body {
 .container {
     max-width: 1200px;
     margin: 30px auto;
-    background: #f1f1f1;
+    background: #a7a3a3;
     padding: 30px;
 }
 
@@ -25,6 +25,7 @@ button {
     border-radius: 4px;
     padding: 10px 20px;
     font-size: .9rem;
+    cursor: pointer;
 }
 
 button:hover{
@@ -32,19 +33,23 @@ button:hover{
 }
 
 button:active{
-    background: green;
-    color: deeppink;
+    background: #0beac6;
+    color: #0b0106;
 }
 
 .slider{
     width: 128px;
     height: 128px;
-    border: 2px solid black;
+    border: 2px solid #000000;
     margin: 30px auto;
+    overflow: hidden; /* спрятали лишний фон slider-line background*/
 }
 .slider-line{
-    height: 256px;
+    height: 128px;
     width: 512px;
-    background: green;
+    background: #8bf3fc;
     display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
 }
