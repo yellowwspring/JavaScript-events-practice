@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie App</title>
+</head>
+<body>
+<script>
+
+    // задаю вопрос пользователю
+    const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+    let personalMovieDB = {
+        count : numberOfFilms,   // Ответ пользователя поместится в это свойство
+        movies : {}, // пустой объект
+        actors : {},
+        genres: [], // пустой массив
+        privat : false,
+    };
+
+    // задаю пользователю два вопроса:
+    let question1 = prompt('Один из последних просмотренных фильмов?', '');
+        question2 = prompt('На сколько оцените его?','');
+        question3 = prompt('Один из последних просмотренных фильмов?','');
+        question4 = prompt('На сколько оцените его?','');
+
+
+        // для лучшей точности передачи свойств - лучше использовать   .[свойство] = ...;
+    personalMovieDB.movies[question1] = question2;
+    personalMovieDB.movies[question3] = question4;
+
+    console.log(personalMovieDB)
+
+
+
+</script>
+</body>
+</html>
